@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>A Guideline for Successful Calibration and Uncertainty Analysis for Soil and Water Assessment: A Review of Papers from the 2016 International SWAT Conference | Gridea</title>
+<meta name="description" content="温故而知新">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="https://richard163.coding.me//favicon.ico?v=1578228395248">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://richard163.coding.me//styles/main.css">
+
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+  </head>
+  <body>
+  
+    <nav class="navbar border fixed split-nav">
+  <div class="nav-brand">
+    <h3><a href="https://richard163.coding.me/">Gridea</a></h3>
+  </div>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
+        
+          <li>
+            
+              <a href="/" class="menu">
+                首页
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/archives" class="menu">
+                归档
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/tags" class="menu">
+                标签
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="post/about" class="menu">
+                关于
+              </a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div id="top" class="row site">
+      <div class="sm-12 md-8 col">
+        <div class="paper">
+          <article class="article">
+            <h1>A Guideline for Successful Calibration and Uncertainty Analysis for Soil and Water Assessment: A Review of Papers from the 2016 International SWAT Conference</h1>
+            <p class="article-meta">
+              2019-11-04
+              
+                <a href="https://richard163.coding.me/tag/52jxTJ_aWS" class="badge secondary">
+                  SWAT Model
+                </a>
+              
+                <a href="https://richard163.coding.me/tag/2cYALq8rcL" class="badge success">
+                  Literature
+                </a>
+              
+                <a href="https://richard163.coding.me/tag/BwGrB_Bv4c" class="badge secondary">
+                  Calibration
+                </a>
+              
+                <a href="https://richard163.coding.me/tag/mmljjuTsA9" class="badge warning">
+                  SWAT-CUP
+                </a>
+              
+                <a href="https://richard163.coding.me/tag/2z-CsYrIG3" class="badge success">
+                  SCI
+                </a>
+              
+                <a href="https://richard163.coding.me/tag/N7_R9q9yT6" class="badge success">
+                  Review
+                </a>
+              
+                <a href="https://richard163.coding.me/tag/xt8yutOgASn" class="badge secondary">
+                  Validation
+                </a>
+              
+            </p>
+            
+              <img src="https://richard163.coding.me//post-images/a-guideline-for-successful-calibration-and-uncertainty-analysis-for-soil-and-water-assessment-a-review-of-papers-from-the-2016-international-swat-conference.jpg" alt="A Guideline for Successful Calibration and Uncertainty Analysis for Soil and Water Assessment: A Review of Papers from the 2016 International SWAT Conference">
+            
+            <div class="post-content">
+              <h1 id="ciation">Ciation:</h1>
+<p>Abbaspour, Karim &amp; Ashraf Vaghefi, Saeid &amp; Srinivasan, Raghvan. (2017). A Guideline for Successful Calibration and Uncertainty Analysis for Soil and Water Assessment: A Review of Papers from the 2016 International SWAT Conference. Water. 10. 6. 10.3390/w10010006.</p>
+<h1 id="keywords">Keywords:</h1>
+<p>calibration; validation; uncertainty analysis; sensitivity analysis; pre-calibration analysis; SWAT-CUP</p>
+<h1 id="key-points">Key points:</h1>
+<ul>
+<li><strong>Review on calibration and uncertainty analysis of SWAT Model.</strong><br>
+对于SWAT模型在参数率定和验证过程的综述</li>
+<li><strong>Highlight a good protocal for calibrating a SWAT model with SWAT-CUP.</strong><br>
+指出了使用SWAT-CUP率定SWAT模型参数的一些规范</li>
+</ul>
+<h1 id="what-ive-learned">What I've learned：</h1>
+<ul>
+<li>
+<p><strong>Steps for builing hydrologic model</strong></p>
+<ul>
+<li><em>Creating the model with a hydrologic program/运行模型</em></li>
+<li><em>Performing sensitivity analysis/敏感性分析(确定模型中最关键的影响因素)</em></li>
+<li><em>Performing calibration and uncertainty analysis/不确定性分析与参数率定(比较模拟值与实测值，确定模拟的精度)</em></li>
+<li><em>Validating the model/模型验证(确定参数率定的可信度)</em></li>
+<li><em>Performing risk analysis(optional)/危险性分析(少数情况下)</em></li>
+</ul>
+</li>
+<li>
+<p><strong>Protocals for Calibration for SWAT</strong></p>
+<ul>
+<li><em>Pre-calibration input data and model structure improvemnet/选最优的输入数据</em></li>
+<li><em>Identify the parameters to optimize/确定需要优化的参数</em></li>
+<li><em>Identify other sensitive parameters/确定其他敏感性参数</em></li>
+<li><em>Running the model/运行模型</em></li>
+<li><em>Perform post-processing/后处理</em></li>
+<li><em>Modifying the suggested new parameters/修改超出所需范围或物理意义范围的参数</em></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+          </article>
+        </div>
+        <div class="paper" data-aos="fade-in">
+          
+        </div>
+        
+      </div>
+
+      <div class="sm-12 md-4 col sidebar">
+  <div class="paper info-container">
+    <img src="https://richard163.coding.me//images/avatar.png?v=1578228395248" class="no-responsive avatar">
+    <div class="text-muted">温故而知新</div>
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      最新文章
+    </div>
+    <div class="row">
+      <ul>
+        
+          
+            <li>
+              <a href="https://richard163.coding.me/post/weY3Ucdxy">SWAT模型的原理</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://richard163.coding.me/post/ipcc-ar6-srocc-special-report-on-ocean-and-cryosphere-in-a-changing-climate">IPCC AR6 SROCC: Special Report on Ocean and Cryosphere in a Changing Climate </a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://richard163.coding.me/post/ipcc-ar6-special-report-global-warming-of-15">IPCC AR6 Special Report: Global Warming of 1.5℃</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://richard163.coding.me/post/swat-cup-zhong-xu-yao-zhu-yi-de-wen-ti">SWAT-CUP中需要注意的问题</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://richard163.coding.me/post/jing-liu-yu-liu-liang">径流与流量</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://richard163.coding.me/post/fen-bu-shi-shui-wen-mo-xing-swat-de-fa-zhan-yu-yan-jiu-dong-tai">分布式水文模型SWAT 的发展与研究动态</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://richard163.coding.me/post/dian-xing-han-qu-liu-yu-shui-wen-guo-cheng-mo-ni-ji-fen-xi">典型寒区流域水文过程模拟及分析</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://richard163.coding.me/post/ji-yu-yi-dong-wang-ge-ji-zhu-de-re-rong-hu-dong-tai-yan-hua-guo-cheng-shu-zhi-mo-ni">基于移动网格技术的热融湖动态演化过程数值模拟</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://richard163.coding.me/post/duo-nian-dong-tu-qu-re-rong-hu-yan-jiu-xian-zhuang-yu-zhan-wang">多年冻土区热融湖研究现状与展望</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://richard163.coding.me/post/pyqt5-xue-xi"> Learning PyQt 5</a>
+            </li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      标签列表
+    </div>
+    <div class="row">
+      
+        <a href="https://richard163.coding.me/tag/pcev5u4qj" class="badge secondary">
+          Notes
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/FF0xFgQixp" class="badge warning">
+          Hydrology
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/52jxTJ_aWS" class="badge secondary">
+          SWAT Model
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/8tp4ELXAXd" class="badge warning">
+          Climate Change
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/2cYALq8rcL" class="badge success">
+          Literature
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/BwGrB_Bv4c" class="badge ">
+          Calibration
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/YYHqBZwaUz" class="badge ">
+          Hydrological Model
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/mmljjuTsA9" class="badge success">
+          SWAT-CUP
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/8zaGauYkFj" class="badge ">
+          VIC Model
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/2z-CsYrIG3" class="badge secondary">
+          SCI
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/N7_R9q9yT6" class="badge ">
+          Review
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/ndaXKC2Sto" class="badge secondary">
+          Thermokarst Lake
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/b0NYKBCzq-" class="badge warning">
+          Python
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/MGsBDsyTIO" class="badge ">
+          GUI
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/MINxlv8YGg" class="badge secondary">
+          PyQt5
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/4n8ZszZ8jW" class="badge ">
+          Cheetsheet
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/20rCkxp7Bw_" class="badge secondary">
+          Numpy
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/KKqZ8e8ev8g" class="badge warning">
+          Matplotlib
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/KqPc5qet4RV" class="badge ">
+          Seaborn
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/59r-tLrbLZ0" class="badge warning">
+          Pandas
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/xt8yutOgASn" class="badge success">
+          Validation
+        </a>
+      
+    </div>
+  </div>
+  <div class="paper">
+    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://richard163.coding.me//atom.xml" target="_blank">RSS</a>
+  </div>
+</div>
+
+
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+</script>
+
+
+
+
+  </body>
+</html>
