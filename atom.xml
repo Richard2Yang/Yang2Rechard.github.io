@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://richard163.coding.me/</id>
     <title>Blog of Richard</title>
-    <updated>2020-01-06T04:21:12.741Z</updated>
+    <updated>2020-01-06T04:24:06.106Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://richard163.coding.me/"/>
     <link rel="self" href="https://richard163.coding.me/atom.xml"/>
@@ -12,8 +12,8 @@
     <rights>All rights reserved 2020, Blog of Richard</rights>
     <entry>
         <title type="html"><![CDATA[寒区水文概述]]></title>
-        <id>https://richard163.coding.me/QOk1dUV5o</id>
-        <link href="https://richard163.coding.me/QOk1dUV5o">
+        <id>https://richard163.coding.me/post/QOk1dUV5o</id>
+        <link href="https://richard163.coding.me/post/QOk1dUV5o">
         </link>
         <updated>2020-01-06T02:13:51.000Z</updated>
         <summary type="html"><![CDATA[<blockquote>
@@ -29,15 +29,15 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[基于模块化建模方法的高寒土壤热状况及水文过程模拟]]></title>
-        <id>https://richard163.coding.me/mhwOx1g4A</id>
-        <link href="https://richard163.coding.me/mhwOx1g4A">
+        <id>https://richard163.coding.me/post/mhwOx1g4A</id>
+        <link href="https://richard163.coding.me/post/mhwOx1g4A">
         </link>
         <updated>2020-01-05T12:57:25.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[SWAT模型的原理]]></title>
-        <id>https://richard163.coding.me/weY3Ucdxy</id>
-        <link href="https://richard163.coding.me/weY3Ucdxy">
+        <id>https://richard163.coding.me/post/weY3Ucdxy</id>
+        <link href="https://richard163.coding.me/post/weY3Ucdxy">
         </link>
         <updated>2020-01-05T08:35:02.000Z</updated>
         <summary type="html"><![CDATA[<blockquote>
@@ -51,8 +51,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[IPCC AR6 SROCC: Special Report on Ocean and Cryosphere in a Changing Climate ]]></title>
-        <id>https://richard163.coding.me/ipcc-ar6-srocc-special-report-on-ocean-and-cryosphere-in-a-changing-climate</id>
-        <link href="https://richard163.coding.me/ipcc-ar6-srocc-special-report-on-ocean-and-cryosphere-in-a-changing-climate">
+        <id>https://richard163.coding.me/post/ipcc-ar6-srocc-special-report-on-ocean-and-cryosphere-in-a-changing-climate</id>
+        <link href="https://richard163.coding.me/post/ipcc-ar6-srocc-special-report-on-ocean-and-cryosphere-in-a-changing-climate">
         </link>
         <updated>2020-01-04T03:09:10.000Z</updated>
         <summary type="html"><![CDATA[<blockquote>
@@ -68,8 +68,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[IPCC AR6 Special Report: Global Warming of 1.5℃]]></title>
-        <id>https://richard163.coding.me/ipcc-ar6-special-report-global-warming-of-15</id>
-        <link href="https://richard163.coding.me/ipcc-ar6-special-report-global-warming-of-15">
+        <id>https://richard163.coding.me/post/ipcc-ar6-special-report-global-warming-of-15</id>
+        <link href="https://richard163.coding.me/post/ipcc-ar6-special-report-global-warming-of-15">
         </link>
         <updated>2020-01-04T03:00:26.000Z</updated>
         <summary type="html"><![CDATA[<blockquote>
@@ -85,15 +85,15 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[SWAT-CUP中需要注意的问题]]></title>
-        <id>https://richard163.coding.me/swat-cup-zhong-xu-yao-zhu-yi-de-wen-ti</id>
-        <link href="https://richard163.coding.me/swat-cup-zhong-xu-yao-zhu-yi-de-wen-ti">
+        <id>https://richard163.coding.me/post/swat-cup-zhong-xu-yao-zhu-yi-de-wen-ti</id>
+        <link href="https://richard163.coding.me/post/swat-cup-zhong-xu-yao-zhu-yi-de-wen-ti">
         </link>
         <updated>2019-12-31T13:28:29.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[径流与流量]]></title>
-        <id>https://richard163.coding.me/jing-liu-yu-liu-liang</id>
-        <link href="https://richard163.coding.me/jing-liu-yu-liu-liang">
+        <id>https://richard163.coding.me/post/jing-liu-yu-liu-liang</id>
+        <link href="https://richard163.coding.me/post/jing-liu-yu-liu-liang">
         </link>
         <updated>2019-12-31T01:57:11.000Z</updated>
         <summary type="html"><![CDATA[<blockquote>
@@ -107,22 +107,22 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[分布式水文模型SWAT 的发展与研究动态]]></title>
-        <id>https://richard163.coding.me/fen-bu-shi-shui-wen-mo-xing-swat-de-fa-zhan-yu-yan-jiu-dong-tai</id>
-        <link href="https://richard163.coding.me/fen-bu-shi-shui-wen-mo-xing-swat-de-fa-zhan-yu-yan-jiu-dong-tai">
+        <id>https://richard163.coding.me/post/fen-bu-shi-shui-wen-mo-xing-swat-de-fa-zhan-yu-yan-jiu-dong-tai</id>
+        <link href="https://richard163.coding.me/post/fen-bu-shi-shui-wen-mo-xing-swat-de-fa-zhan-yu-yan-jiu-dong-tai">
         </link>
         <updated>2019-11-15T08:22:17.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[典型寒区流域水文过程模拟及分析]]></title>
-        <id>https://richard163.coding.me/dian-xing-han-qu-liu-yu-shui-wen-guo-cheng-mo-ni-ji-fen-xi</id>
-        <link href="https://richard163.coding.me/dian-xing-han-qu-liu-yu-shui-wen-guo-cheng-mo-ni-ji-fen-xi">
+        <id>https://richard163.coding.me/post/dian-xing-han-qu-liu-yu-shui-wen-guo-cheng-mo-ni-ji-fen-xi</id>
+        <link href="https://richard163.coding.me/post/dian-xing-han-qu-liu-yu-shui-wen-guo-cheng-mo-ni-ji-fen-xi">
         </link>
         <updated>2019-11-12T06:42:27.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[基于移动网格技术的热融湖动态演化过程数值模拟]]></title>
-        <id>https://richard163.coding.me/ji-yu-yi-dong-wang-ge-ji-zhu-de-re-rong-hu-dong-tai-yan-hua-guo-cheng-shu-zhi-mo-ni</id>
-        <link href="https://richard163.coding.me/ji-yu-yi-dong-wang-ge-ji-zhu-de-re-rong-hu-dong-tai-yan-hua-guo-cheng-shu-zhi-mo-ni">
+        <id>https://richard163.coding.me/post/ji-yu-yi-dong-wang-ge-ji-zhu-de-re-rong-hu-dong-tai-yan-hua-guo-cheng-shu-zhi-mo-ni</id>
+        <link href="https://richard163.coding.me/post/ji-yu-yi-dong-wang-ge-ji-zhu-de-re-rong-hu-dong-tai-yan-hua-guo-cheng-shu-zhi-mo-ni">
         </link>
         <updated>2019-11-11T08:21:27.000Z</updated>
     </entry>
