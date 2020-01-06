@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://richard163.coding.me/</id>
     <title>Blog of Richard</title>
-    <updated>2020-01-06T02:02:29.171Z</updated>
+    <updated>2020-01-06T02:29:05.569Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://richard163.coding.me/"/>
     <link rel="self" href="https://richard163.coding.me/atom.xml"/>
@@ -10,6 +10,23 @@
     <logo>https://richard163.coding.me/images/avatar.png</logo>
     <icon>https://richard163.coding.me/favicon.ico</icon>
     <rights>All rights reserved 2020, Blog of Richard</rights>
+    <entry>
+        <title type="html"><![CDATA[冰冻圈水文学-概述]]></title>
+        <id>https://richard163.coding.me/post/QOk1dUV5o</id>
+        <link href="https://richard163.coding.me/post/QOk1dUV5o">
+        </link>
+        <updated>2020-01-06T02:13:51.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>主要是对《冰冻圈水文学》一书的第一章(绪论)中重点内容和概念的总结<br>
+<strong>Citation</strong>: 丁永建, 张世强, 陈仁升, 等. 2017, 寒区水文导论,  科学出版社.</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>主要是对《冰冻圈水文学》一书的第一章(绪论)中重点内容和概念的总结<br>
+<strong>Citation</strong>: 丁永建, 张世强, 陈仁升, 等. 2017, 寒区水文导论,  科学出版社.</p>
+</blockquote>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[基于模块化建模方法的高寒土壤热状况及水文过程模拟]]></title>
         <id>https://richard163.coding.me/post/mhwOx1g4A</id>
@@ -108,12 +125,5 @@
         <link href="https://richard163.coding.me/post/ji-yu-yi-dong-wang-ge-ji-zhu-de-re-rong-hu-dong-tai-yan-hua-guo-cheng-shu-zhi-mo-ni">
         </link>
         <updated>2019-11-11T08:21:27.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[多年冻土区热融湖研究现状与展望]]></title>
-        <id>https://richard163.coding.me/post/duo-nian-dong-tu-qu-re-rong-hu-yan-jiu-xian-zhuang-yu-zhan-wang</id>
-        <link href="https://richard163.coding.me/post/duo-nian-dong-tu-qu-re-rong-hu-yan-jiu-xian-zhuang-yu-zhan-wang">
-        </link>
-        <updated>2019-11-09T13:25:41.000Z</updated>
     </entry>
 </feed>
