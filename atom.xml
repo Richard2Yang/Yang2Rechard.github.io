@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://richard163.coding.me/</id>
     <title>Blog of Richard</title>
-    <updated>2020-01-06T03:31:10.884Z</updated>
+    <updated>2020-01-06T03:38:22.211Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://richard163.coding.me/"/>
     <link rel="self" href="https://richard163.coding.me/atom.xml"/>
@@ -10,23 +10,6 @@
     <logo>https://richard163.coding.me/images/avatar.png</logo>
     <icon>https://richard163.coding.me/favicon.ico</icon>
     <rights>All rights reserved 2020, Blog of Richard</rights>
-    <entry>
-        <title type="html"><![CDATA[冰川水文研究的内容及基本特点]]></title>
-        <id>https://richard163.coding.me/wg0WOgN5m</id>
-        <link href="https://richard163.coding.me/wg0WOgN5m">
-        </link>
-        <updated>2020-01-06T03:17:21.000Z</updated>
-        <summary type="html"><![CDATA[<blockquote>
-<p>对《寒区水文导论》一书的<strong>第三章</strong>中重点内容和概念的总结（读书笔记）<br>
-<strong>Citation</strong>: 丁永建, 张世强, 陈仁升, 等. 2017, 寒区水文导论,  科学出版社.</p>
-</blockquote>
-]]></summary>
-        <content type="html"><![CDATA[<blockquote>
-<p>对《寒区水文导论》一书的<strong>第三章</strong>中重点内容和概念的总结（读书笔记）<br>
-<strong>Citation</strong>: 丁永建, 张世强, 陈仁升, 等. 2017, 寒区水文导论,  科学出版社.</p>
-</blockquote>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[寒区水文概述]]></title>
         <id>https://richard163.coding.me/QOk1dUV5o</id>
@@ -135,5 +118,12 @@
         <link href="https://richard163.coding.me/dian-xing-han-qu-liu-yu-shui-wen-guo-cheng-mo-ni-ji-fen-xi">
         </link>
         <updated>2019-11-12T06:42:27.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[基于移动网格技术的热融湖动态演化过程数值模拟]]></title>
+        <id>https://richard163.coding.me/ji-yu-yi-dong-wang-ge-ji-zhu-de-re-rong-hu-dong-tai-yan-hua-guo-cheng-shu-zhi-mo-ni</id>
+        <link href="https://richard163.coding.me/ji-yu-yi-dong-wang-ge-ji-zhu-de-re-rong-hu-dong-tai-yan-hua-guo-cheng-shu-zhi-mo-ni">
+        </link>
+        <updated>2019-11-11T08:21:27.000Z</updated>
     </entry>
 </feed>
