@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://richard163.coding.me/</id>
     <title>Blog of Richard</title>
-    <updated>2020-01-07T02:27:37.719Z</updated>
+    <updated>2020-01-07T07:11:30.375Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://richard163.coding.me/"/>
     <link rel="self" href="https://richard163.coding.me/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://richard163.coding.me/images/avatar.png</logo>
     <icon>https://richard163.coding.me/favicon.ico</icon>
     <rights>All rights reserved 2020, Blog of Richard</rights>
+    <entry>
+        <title type="html"><![CDATA[积雪的基本概念及分布]]></title>
+        <id>https://richard163.coding.me/post/ji-xue-de-ji-ben-gai-nian-ji-fen-bu</id>
+        <link href="https://richard163.coding.me/post/ji-xue-de-ji-ben-gai-nian-ji-fen-bu">
+        </link>
+        <updated>2020-01-07T07:07:16.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[SWAT模型的原理]]></title>
         <id>https://richard163.coding.me/post/swat-mo-xing-de-yuan-li</id>
@@ -138,12 +145,5 @@
 <p>流域地表面的降水，如雨、雪等，沿流域的不同路径向河流、湖泊和海洋汇集的水流叫径流。在某一时段内通过河流某一过水断面的水量称为该断面的径流量。径流是水循环的主要环节，径流量是陆地上最重要的水文要素之一，是水量平衡的基本要素。</p>
 </blockquote>
 ]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[分布式水文模型SWAT 的发展与研究动态]]></title>
-        <id>https://richard163.coding.me/post/fen-bu-shi-shui-wen-mo-xing-swat-de-fa-zhan-yu-yan-jiu-dong-tai</id>
-        <link href="https://richard163.coding.me/post/fen-bu-shi-shui-wen-mo-xing-swat-de-fa-zhan-yu-yan-jiu-dong-tai">
-        </link>
-        <updated>2019-11-15T08:22:17.000Z</updated>
     </entry>
 </feed>
