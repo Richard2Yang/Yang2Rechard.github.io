@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>SWAT-CUP中需要注意的问题 | Blog of Richard</title>
-<link rel="shortcut icon" href="https://richard163.coding.me//favicon.ico?v=1578484515989">
+<link rel="shortcut icon" href="https://richard163.coding.me//favicon.ico?v=1578484870159">
 <link href="https://cdn.remixicon.com/releases/v2.1.0/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://richard163.coding.me//styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="SWAT-CUP中需要注意的问题 | Blog of Richard - Atom Feed" href="https://richard163.coding.me//atom.xml">
@@ -28,7 +28,7 @@ P-factor is the percentage of observed data..." />
       <div class="main-content">
         <div class="site-header">
   <a href="https://richard163.coding.me/">
-  <img class="avatar" src="https://richard163.coding.me//images/avatar.png?v=1578484515989" alt="">
+  <img class="avatar" src="https://richard163.coding.me//images/avatar.png?v=1578484870159" alt="">
   </a>
   <h1 class="site-title">
     Blog of Richard
@@ -140,25 +140,27 @@ R因子是95%置信区间的数据的宽度, 该值越小说明模拟的结果�
 注：如果最初将参数范围设置为等于最大物理意义范围，但仍无法找到包含任何或大部分数据的95PPU，则问题不在于参数校准上，必须重新检查概念模型。</p>
 </blockquote>
 <h2 id="影响地下水ground-water的变量"><strong>影响地下水(ground water)的变量</strong></h2>
-<p><img src="https://richard163.coding.me//post-images/1578362565034.png" alt="影响地下水的变量" loading="lazy"><br>
-- <strong>GWQMN</strong><br>
+<figure data-type="image" tabindex="1"><img src="https://richard163.coding.me//post-images/1578362565034.png" alt="影响地下水的变量" loading="lazy"></figure>
+<ul>
+<li><strong>GWQMN</strong><br>
 Threshold depth of water in the shallow aquifer required for return flow to occur (mm <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow><annotation encoding="application/x-tex">H_2O</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.08125em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span></span></span></span>), range from 0 to 5000.<br>
 The shallow aquifer contributes base flow to the main channel or reach within the subbasin. Base flow is allowed to enter the reach only if the amount of water stored in the shallow aquifer exceeds a threshold value specified by the user,<br>
-浅水层中的发生回流所需的水阈值深度（mm <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow><annotation encoding="application/x-tex">H_2O</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.08125em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span></span></span></span>），该值介于0-5000之间。浅水层中的水会以基流的形式进入河道，只有当浅水层中的出水量超过该值时，才会有基流产生并进入河道。<strong>即该值越小，进入河道的基流越多</strong><br>
-- <strong>GW_REVAP</strong><br>
+浅水层中的发生回流所需的水阈值深度（mm <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow><annotation encoding="application/x-tex">H_2O</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.08125em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span></span></span></span>），该值介于0-5000之间。浅水层中的水会以基流的形式进入河道，只有当浅水层中的出水量超过该值时，才会有基流产生并进入河道。<strong>即该值越小，进入河道的基流越多</strong></li>
+<li><strong>GW_REVAP</strong><br>
 Groundwater &quot;revap&quot; coefficient.（地下水再蒸发系数）<br>
-随着GW_REVAP接近0，水从浅层含水层到根部区域的流动受到限制。随着GW_REVAP接近1，从浅层含水层到根区的转移速率接近潜在的蒸散速率，<strong>该值越大代表浅层含水层中的水进入非饱和带的能力越强</strong>。GW_REVAP的值应在0.02和0.20之间。<br>
-- <strong>REVAPMN</strong><br>
+随着GW_REVAP接近0，水从浅层含水层到根部区域的流动受到限制。随着GW_REVAP接近1，从浅层含水层到根区的转移速率接近潜在的蒸散速率，<strong>该值越大代表浅层含水层中的水进入非饱和带的能力越强</strong>。GW_REVAP的值应在0.02和0.20之间。</li>
+<li><strong>REVAPMN</strong><br>
 Threshold depth of water in the shallow aquifer for “revap” or percolation to the deep aquifer to occur (mm <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow><annotation encoding="application/x-tex">H_2O</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.08125em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span></span></span></span>), range from 0 to 500.<br>
 浅水层中水发生“渗透”或渗入深水层的阈值深度（mm <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow><annotation encoding="application/x-tex">H_2O</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.08125em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span></span></span></span>），该值介于0到500之间。<br>
-仅当浅层含水层中的水量等于或大于REVAPMN时，浅层含水层的水才会运动到非饱和带，因此，<strong>该值越大意味着浅层含水层中的水越难进入深水层</strong>。<br>
-- <strong>ALPHA_BF</strong><br>
+仅当浅层含水层中的水量等于或大于REVAPMN时，浅层含水层的水才会运动到非饱和带，因此，<strong>该值越大意味着浅层含水层中的水越难进入深水层</strong>。</li>
+<li><strong>ALPHA_BF</strong><br>
 Baseflow alpha factor (1/days), baseflow recession constant(<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>α</mi><mrow><mi>g</mi><mi>w</mi></mrow></mrow><annotation encoding="application/x-tex">\alpha{gw}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span></span></span></span></span>)<br>
-地下水回归常数，能够直接指示地下水对径流补给的变化。在地下水响应快的陆地该值介于0.9-1.0, 响应慢的地区介于0.1-0.3之间。<br>
-- <strong>GW_DELAY</strong><br>
-通过渗漏或旁通流穿过土壤剖面底部进入并流经包气带，之后成为浅层地下水补给。在水分离开土壤剖面到进入浅层含水层之间的时间延迟，取决于地下水面的深度以及包气带和地下水饱和带地质组分的水力性质。该值无法直接测量，<strong>延迟时间越小，渗漏进入浅层含水层的水量越多</strong><br>
-- <strong>RCHRG_DP</strong><br>
-Deep aquifer percoltion fraction, the fraction of percolation from the root zone which recharges the deep aquifer.The value for RCHRG DP should be between 0.0 and 1.0. 含水层渗漏系数，<strong>该值越小代表浅层含水层向深层地下水的下渗越小，该值介于0-1之间</strong></p>
+地下水回归常数，能够直接指示地下水对径流补给的变化。在地下水响应快的陆地该值介于0.9-1.0, 响应慢的地区介于0.1-0.3之间。</li>
+<li><strong>GW_DELAY</strong><br>
+通过渗漏或旁通流穿过土壤剖面底部进入并流经包气带，之后成为浅层地下水补给。在水分离开土壤剖面到进入浅层含水层之间的时间延迟，取决于地下水面的深度以及包气带和地下水饱和带地质组分的水力性质。该值无法直接测量，<strong>延迟时间越小，渗漏进入浅层含水层的水量越多</strong></li>
+<li><strong>RCHRG_DP</strong><br>
+Deep aquifer percoltion fraction, the fraction of percolation from the root zone which recharges the deep aquifer.The value for RCHRG DP should be between 0.0 and 1.0. 含水层渗漏系数，<strong>该值越小代表浅层含水层向深层地下水的下渗越小，该值介于0-1之间</strong></li>
+</ul>
 <h2 id="影响地表径流surface-runoff变量"><strong>影响地表径流(surface runoff)变量</strong></h2>
 <ul>
 <li><strong>CN2</strong><br>
