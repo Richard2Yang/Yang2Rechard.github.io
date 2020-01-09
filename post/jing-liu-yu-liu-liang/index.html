@@ -1,108 +1,104 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" >
+
 <title>径流与流量 | Blog of Richard</title>
-<link rel="shortcut icon" href="https://richard163.coding.me//favicon.ico?v=1578577670434">
-<link href="https://cdn.remixicon.com/releases/v2.1.0/remixicon.css" rel="stylesheet">
+<meta name="description" content="Stay Hungry, Stay Foolish">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="https://richard163.coding.me//favicon.ico?v=1578578007240">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://richard163.coding.me//styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="径流与流量 | Blog of Richard - Atom Feed" href="https://richard163.coding.me//atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
-
-    <meta name="description" content="
-流域地表面的降水，如雨、雪等，沿流域的不同路径向河流、湖泊和海洋汇集的水流叫径流。在某一时段内通过河流某一过水断面的水量称为该断面的径流量。径流是水循环的主要环节，径流量是陆地上最重要的水文要素之一，是水量平衡的基本要素。
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
-径流量的表..." />
-    <meta name="keywords" content="Hydrology,Notes" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://richard163.coding.me/">
-  <img class="avatar" src="https://richard163.coding.me//images/avatar.png?v=1578577670434" alt="">
-  </a>
-  <h1 class="site-title">
-    Blog of Richard
-  </h1>
-  <p class="site-description">
-    Stay Hungry, Stay Foolish
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
+  
+    <nav class="navbar border fixed split-nav">
+  <div class="nav-brand">
+    <h3><a href="https://richard163.coding.me/">Blog of Richard</a></h3>
   </div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
+        
+          <li>
+            
+              <a href="/" class="menu">
+                首页
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/archives" class="menu">
+                归档
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/tags" class="menu">
+                标签
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/post/about" class="menu">
+                关于
+              </a>
+            
+          </li>
+        
+      </ul>
+    </div>
   </div>
-</div>
+</nav>
 
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              径流与流量
-            </h2>
-            <div class="post-info">
-              <span>
-                2019-12-31
-              </span>
-              <span>
-                3 min read
-              </span>
+    <div id="top" class="row site">
+      <div class="sm-12 md-8 col">
+        <div class="paper">
+          <article class="article">
+            <h1>径流与流量</h1>
+            <p class="article-meta">
+              2019-12-31
               
-                <a href="https://richard163.coding.me/tag/YOQagDdAok" class="post-tag">
-                  # Hydrology
+                <a href="https://richard163.coding.me/tag/YOQagDdAok" class="badge secondary">
+                  Hydrology
                 </a>
               
-                <a href="https://richard163.coding.me/tag/EtwNWeI5_J" class="post-tag">
-                  # Notes
+                <a href="https://richard163.coding.me/tag/EtwNWeI5_J" class="badge ">
+                  Notes
                 </a>
               
-            </div>
+            </p>
             
-              <img class="post-feature-image" src="https://s2.ax1x.com/2020/01/07/lcw04x.jpg" alt="">
+              <img src="https://s2.ax1x.com/2020/01/07/lcw04x.jpg" alt="径流与流量">
             
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <blockquote>
+            <div class="post-content">
+              <blockquote>
 <p>流域地表面的降水，如雨、雪等，沿流域的不同路径向河流、湖泊和海洋汇集的水流叫径流。在某一时段内通过河流某一过水断面的水量称为该断面的径流量。径流是水循环的主要环节，径流量是陆地上最重要的水文要素之一，是水量平衡的基本要素。</p>
 </blockquote>
 <!-- more -->
@@ -127,93 +123,254 @@
 <h2 id="2-汇流阶段">2 汇流阶段</h2>
 <p>降雨产生的径流，汇集到附近河网后，又从上游流向下游，最后全部流经流域出口断面，叫做河网汇流，这种河网汇流过程，即为汇流阶段。</p>
 
-              </div>
-              <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li><a href="#%E5%BE%84%E6%B5%81%E9%87%8F%E7%9A%84%E8%A1%A8%E7%A4%BA%E6%96%B9%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%A6%E9%87%8F%E5%8D%95%E4%BD%8D">径流量的表示方法及其度量单位：</a>
-<ul>
-<li><a href="#1-%E6%B5%81%E9%87%8Fq">(1) 流量Q</a></li>
-<li><a href="#2-%E5%BE%84%E6%B5%81%E6%80%BB%E9%87%8Fw">(2) 径流总量W</a></li>
-<li><a href="#3-%E5%BE%84%E6%B5%81%E6%B7%B1r">(3) 径流深R</a></li>
-<li><a href="#4-%E5%BE%84%E6%B5%81%E6%A8%A1%E6%95%B0m">(4) 径流模数M</a></li>
-<li><a href="#5%E5%BE%84%E6%B5%81%E7%B3%BB%E6%95%B0%CE%B1">(5)径流系数α</a></li>
-</ul>
-</li>
-<li><a href="#%E5%BE%84%E6%B5%81%E7%9A%84%E5%BD%A2%E6%88%90%E8%BF%87%E7%A8%8B">径流的形成过程</a>
-<ul>
-<li><a href="#1%E4%BA%A7%E6%B5%81%E9%98%B6%E6%AE%B5">1.产流阶段</a></li>
-<li><a href="#2-%E6%B1%87%E6%B5%81%E9%98%B6%E6%AE%B5">2 汇流阶段</a></li>
-</ul>
-</li>
-</ul>
-
-              </div>
             </div>
           </article>
         </div>
-
+        <div class="paper" data-aos="fade-in">
+          
+            <div class="next-post">
+              <div class="next">
+                下一篇
+              </div>
+              <a href="https://richard163.coding.me/post/fen-bu-shi-shui-wen-mo-xing-swat-de-fa-zhan-yu-yan-jiu-dong-tai">
+                <h3 class="post-title">
+                  分布式水文模型SWAT 的发展与研究动态
+                </h3>
+              </a>
+            </div>
+          
+        </div>
         
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://richard163.coding.me/post/fen-bu-shi-shui-wen-mo-xing-swat-de-fa-zhan-yu-yan-jiu-dong-tai">
-              <h3 class="post-title">
-                分布式水文模型SWAT 的发展与研究动态
-              </h3>
-            </a>
-          </div>
-        
+      </div>
 
+      <div class="sm-12 md-4 col sidebar">
+  <div class="paper info-container">
+    <img src="https://richard163.coding.me//images/avatar.png?v=1578578007240" class="no-responsive avatar">
+    <div class="text-muted">Stay Hungry, Stay Foolish</div>
+    <div class="social-container">
+      
         
-
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-  <a class="rss" href="https://richard163.coding.me//atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      最新文章
+    </div>
+    <div class="row">
+      <ul>
+        
+          
+            <li>
+              <a href="https://richard163.coding.me/post/rong-xue-jing-liu-mo-xing">融雪径流模型</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://richard163.coding.me/post/ji-xue-de-ji-ben-gai-nian-ji-fen-bu">积雪的基本概念及分布</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://richard163.coding.me/post/swat-mo-xing-de-yuan-li">SWAT模型的原理</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://richard163.coding.me/post/ji-yu-mo-kuai-hua-jian-mo-fang-fa-de-gao-han-tu-rang-re-zhuang-kuang-ji-shui-wen-guo-cheng-mo-ni">基于模块化建模方法的高寒土壤热状况及水文过程模拟</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://richard163.coding.me/post/han-qu-shui-wen-gai-lun">寒区水文概论</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://richard163.coding.me/post/bing-chuan-jing-liu-de-mo-ni">冰川径流的模拟</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://richard163.coding.me/post/bing-chuan-shui-wen-yan-jiu-de-nei-rong">冰川水文研究的内容及基本特点</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://richard163.coding.me/post/ipcc-ar6-srocc-special-report-on-ocean-and-cryosphere-in-a-changing-climate">IPCC AR6 SROCC: Special Report on Ocean and Cryosphere in a Changing Climate </a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://richard163.coding.me/post/ipcc-ar6-special-report-global-warming-of-15">IPCC AR6 Special Report: Global Warming of 1.5℃</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://richard163.coding.me/post/swat-cup-zhong-xu-yao-zhu-yi-de-wen-ti">SWAT-CUP中需要注意的问题</a>
+            </li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      标签列表
+    </div>
+    <div class="row">
+      
+        <a href="https://richard163.coding.me/tag/Wzbzvq-JO" class="badge secondary">
+          Model
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/YOQagDdAok" class="badge secondary">
+          Hydrology
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/EtwNWeI5_J" class="badge ">
+          Notes
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/cTikL1GtwF" class="badge warning">
+          Cryosphere
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/25ZawQQsdM" class="badge secondary">
+          SWAT
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/WTjoUqOEGp" class="badge ">
+          Literature
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/PDT8_RHI0O" class="badge warning">
+          Climate Change
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/hb4MaOqhQF" class="badge secondary">
+          SWAT-CUP
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/CqcXyttK4A" class="badge success">
+          Calibration&amp;Validation
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/UvAMMCXBuM" class="badge success">
+          VIC
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/9v4WXiuy8u" class="badge ">
+          SCI
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/bW4T_ma3wA" class="badge ">
+          Thermokarst Lake
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/Al3ClbouMC" class="badge ">
+          Review
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/aMfrV0VPC5" class="badge success">
+          Python
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/NLuYGV7Yb4" class="badge secondary">
+          GUI
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/E0kEBQzV1L" class="badge ">
+          PyQt5
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/etvodOpaO_L" class="badge success">
+          Cheetsheet
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/D0k8SJN0XfG" class="badge warning">
+          Numpy
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/omjh0yAJMdw" class="badge ">
+          Matplotlib
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/eJIsSXtytZ2" class="badge secondary">
+          Seaborn
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/hZb0DGyQCks" class="badge warning">
+          Pandas
+        </a>
+      
+    </div>
+  </div>
+  <div class="paper">
+    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://richard163.coding.me//atom.xml" target="_blank">RSS</a>
+  </div>
 </div>
 
-      </div>
+
     </div>
 
-    <script>
-      hljs.initHighlightingOnLoad()
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+<script type="application/javascript">
 
-      // This should probably be throttled.
-      // Especially because it triggers during smooth scrolling.
-      // https://lodash.com/docs/4.17.10#throttle
-      // You could do like...
-      // window.addEventListener("scroll", () => {
-      //    _.throttle(doThatStuff, 100);
-      // });
-      // Only not doing it here to keep this Pen dependency-free.
+AOS.init();
 
-      window.addEventListener("scroll", event => {
-        let fromTop = window.scrollY;
+hljs.initHighlightingOnLoad()
 
-        mainNavLinks.forEach((link, index) => {
-          let section = document.getElementById(decodeURI(link.hash).substring(1));
-          let nextSection = null
-          if (mainNavLinks[index + 1]) {
-            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-          }
-          if (section.offsetTop <= fromTop) {
-            if (nextSection) {
-              if (nextSection.offsetTop > fromTop) {
-                link.classList.add("current");
-              } else {
-                link.classList.remove("current");    
-              }
-            } else {
-              link.classList.add("current");
-            }
-          } else {
-            link.classList.remove("current");
-          }
-        });
-      });
+</script>
 
-    </script>
+
+
+
   </body>
 </html>

@@ -1,265 +1,481 @@
+<!DOCTYPE html>
 <html>
   <head>
-  <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" >
+
 <title>Python | Blog of Richard</title>
-<link rel="shortcut icon" href="https://richard163.coding.me//favicon.ico?v=1578577670434">
-<link href="https://cdn.remixicon.com/releases/v2.1.0/remixicon.css" rel="stylesheet">
+<meta name="description" content="Stay Hungry, Stay Foolish">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="https://richard163.coding.me//favicon.ico?v=1578578007240">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://richard163.coding.me//styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="Python | Blog of Richard - Atom Feed" href="https://richard163.coding.me//atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
-  <meta name="description" content="Stay Hungry, Stay Foolish" />
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://richard163.coding.me/">
-  <img class="avatar" src="https://richard163.coding.me//images/avatar.png?v=1578577670434" alt="">
-  </a>
-  <h1 class="site-title">
-    Blog of Richard
-  </h1>
-  <p class="site-description">
-    Stay Hungry, Stay Foolish
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
+    <nav class="navbar border fixed split-nav">
+  <div class="nav-brand">
+    <h3><a href="https://richard163.coding.me/">Blog of Richard</a></h3>
   </div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-</div>
-
-        <div class="current-tag-container">
-            <h2 class="title">
-                标签：# Python
-            </h2> 
-        </div>
-        <div class="post-container">
-  
-    <article class="post">
-      <a href="https://richard163.coding.me/post/pyqt5-xue-xi">
-        <h2 class="post-title"> Learning PyQt 5</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-11-08
-        </span>
-        <span>
-          1 min read
-        </span>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
         
-          <a href="https://richard163.coding.me/tag/aMfrV0VPC5" class="post-tag">
-            # Python
-          </a>
+          <li>
+            
+              <a href="/" class="menu">
+                首页
+              </a>
+            
+          </li>
         
-          <a href="https://richard163.coding.me/tag/NLuYGV7Yb4" class="post-tag">
-            # GUI
-          </a>
+          <li>
+            
+              <a href="/archives" class="menu">
+                归档
+              </a>
+            
+          </li>
         
-          <a href="https://richard163.coding.me/tag/E0kEBQzV1L" class="post-tag">
-            # PyQt5
-          </a>
+          <li>
+            
+              <a href="/tags" class="menu">
+                标签
+              </a>
+            
+          </li>
         
-      </div>
-      
-        <a href="https://richard163.coding.me/post/pyqt5-xue-xi" class="post-feature-image" style="background-image: url('https://s2.ax1x.com/2020/01/07/lcwsgO.jpg')">
-        </a>
-      
-      <div class="post-abstract">
+          <li>
+            
+              <a href="/post/about" class="menu">
+                关于
+              </a>
+            
+          </li>
         
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://richard163.coding.me/post/python-cheetsheet-numpy">
-        <h2 class="post-title">Python Cheetsheet——Numpy</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-11-06
-        </span>
-        <span>
-          0 min read
-        </span>
-        
-          <a href="https://richard163.coding.me/tag/aMfrV0VPC5" class="post-tag">
-            # Python
-          </a>
-        
-          <a href="https://richard163.coding.me/tag/etvodOpaO_L" class="post-tag">
-            # Cheetsheet
-          </a>
-        
-          <a href="https://richard163.coding.me/tag/D0k8SJN0XfG" class="post-tag">
-            # Numpy
-          </a>
-        
-      </div>
-      
-        <a href="https://richard163.coding.me/post/python-cheetsheet-numpy" class="post-feature-image" style="background-image: url('https://s2.ax1x.com/2020/01/07/lcwcKe.jpg')">
-        </a>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://richard163.coding.me/post/python-cheetsheet-matplotlib">
-        <h2 class="post-title">Python Cheetsheet——Matplotlib</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-11-06
-        </span>
-        <span>
-          0 min read
-        </span>
-        
-          <a href="https://richard163.coding.me/tag/aMfrV0VPC5" class="post-tag">
-            # Python
-          </a>
-        
-          <a href="https://richard163.coding.me/tag/etvodOpaO_L" class="post-tag">
-            # Cheetsheet
-          </a>
-        
-          <a href="https://richard163.coding.me/tag/omjh0yAJMdw" class="post-tag">
-            # Matplotlib
-          </a>
-        
-      </div>
-      
-        <a href="https://richard163.coding.me/post/python-cheetsheet-matplotlib" class="post-feature-image" style="background-image: url('https://s2.ax1x.com/2020/01/07/lcwyvD.jpg')">
-        </a>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://richard163.coding.me/post/python-cheetsheet-seaborn">
-        <h2 class="post-title">Python Cheetsheet——Seaborn</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-11-06
-        </span>
-        <span>
-          0 min read
-        </span>
-        
-          <a href="https://richard163.coding.me/tag/aMfrV0VPC5" class="post-tag">
-            # Python
-          </a>
-        
-          <a href="https://richard163.coding.me/tag/etvodOpaO_L" class="post-tag">
-            # Cheetsheet
-          </a>
-        
-          <a href="https://richard163.coding.me/tag/eJIsSXtytZ2" class="post-tag">
-            # Seaborn
-          </a>
-        
-      </div>
-      
-        <a href="https://richard163.coding.me/post/python-cheetsheet-seaborn" class="post-feature-image" style="background-image: url('https://s2.ax1x.com/2020/01/07/lcw2bd.jpg')">
-        </a>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://richard163.coding.me/post/python-cheetsheet-pandas">
-        <h2 class="post-title">Python Cheetsheet——Pandas</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-11-06
-        </span>
-        <span>
-          0 min read
-        </span>
-        
-          <a href="https://richard163.coding.me/tag/aMfrV0VPC5" class="post-tag">
-            # Python
-          </a>
-        
-          <a href="https://richard163.coding.me/tag/etvodOpaO_L" class="post-tag">
-            # Cheetsheet
-          </a>
-        
-          <a href="https://richard163.coding.me/tag/hZb0DGyQCks" class="post-tag">
-            # Pandas
-          </a>
-        
-      </div>
-      
-        <a href="https://richard163.coding.me/post/python-cheetsheet-pandas" class="post-feature-image" style="background-image: url('https://s2.ax1x.com/2020/01/07/lcwgDH.jpg')">
-        </a>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-</div>
-
-        <div class="pagination-container">
-  
-  
-</div>
-
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-  <a class="rss" href="https://richard163.coding.me//atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
-</div>
-
-      </div>
+      </ul>
     </div>
+  </div>
+</nav>
+
+    <div id="top" class="row site">
+      <div class="sm-12 md-8 col">
+        <div class="paper">
+          <h2 class="current-tag">标签: Python</h2>
+          
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://richard163.coding.me/post/pyqt5-xue-xi"> Learning PyQt 5</a>
+    </h2>
+    <p class="article-meta">
+      2019-11-08
+      
+        <a href="https://richard163.coding.me/tag/aMfrV0VPC5" class="badge warning">
+          Python
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/NLuYGV7Yb4" class="badge warning">
+          GUI
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/E0kEBQzV1L" class="badge secondary">
+          PyQt5
+        </a>
+      
+    </p>
+    <p class="text-lead">
+      
+    </p>
+    <div class="row">
+      <a href="https://richard163.coding.me/post/pyqt5-xue-xi" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
+
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://richard163.coding.me/post/python-cheetsheet-numpy">Python Cheetsheet——Numpy</a>
+    </h2>
+    <p class="article-meta">
+      2019-11-06
+      
+        <a href="https://richard163.coding.me/tag/aMfrV0VPC5" class="badge ">
+          Python
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/etvodOpaO_L" class="badge success">
+          Cheetsheet
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/D0k8SJN0XfG" class="badge secondary">
+          Numpy
+        </a>
+      
+    </p>
+    <p class="text-lead">
+      
+    </p>
+    <div class="row">
+      <a href="https://richard163.coding.me/post/python-cheetsheet-numpy" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
+
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://richard163.coding.me/post/python-cheetsheet-matplotlib">Python Cheetsheet——Matplotlib</a>
+    </h2>
+    <p class="article-meta">
+      2019-11-06
+      
+        <a href="https://richard163.coding.me/tag/aMfrV0VPC5" class="badge ">
+          Python
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/etvodOpaO_L" class="badge secondary">
+          Cheetsheet
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/omjh0yAJMdw" class="badge secondary">
+          Matplotlib
+        </a>
+      
+    </p>
+    <p class="text-lead">
+      
+    </p>
+    <div class="row">
+      <a href="https://richard163.coding.me/post/python-cheetsheet-matplotlib" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
+
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://richard163.coding.me/post/python-cheetsheet-seaborn">Python Cheetsheet——Seaborn</a>
+    </h2>
+    <p class="article-meta">
+      2019-11-06
+      
+        <a href="https://richard163.coding.me/tag/aMfrV0VPC5" class="badge warning">
+          Python
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/etvodOpaO_L" class="badge warning">
+          Cheetsheet
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/eJIsSXtytZ2" class="badge secondary">
+          Seaborn
+        </a>
+      
+    </p>
+    <p class="text-lead">
+      
+    </p>
+    <div class="row">
+      <a href="https://richard163.coding.me/post/python-cheetsheet-seaborn" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
+
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://richard163.coding.me/post/python-cheetsheet-pandas">Python Cheetsheet——Pandas</a>
+    </h2>
+    <p class="article-meta">
+      2019-11-06
+      
+        <a href="https://richard163.coding.me/tag/aMfrV0VPC5" class="badge secondary">
+          Python
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/etvodOpaO_L" class="badge success">
+          Cheetsheet
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/hZb0DGyQCks" class="badge ">
+          Pandas
+        </a>
+      
+    </p>
+    <p class="text-lead">
+      
+    </p>
+    <div class="row">
+      <a href="https://richard163.coding.me/post/python-cheetsheet-pandas" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
+
+
+        </div>
+        <div class="row flex-edges">
+  
+  
+</div>
+
+      </div>
+      <div class="sm-12 md-4 col sidebar">
+  <div class="paper info-container">
+    <img src="https://richard163.coding.me//images/avatar.png?v=1578578007240" class="no-responsive avatar">
+    <div class="text-muted">Stay Hungry, Stay Foolish</div>
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      最新文章
+    </div>
+    <div class="row">
+      <ul>
+        
+          
+            <li>
+              <a href="https://richard163.coding.me/post/rong-xue-jing-liu-mo-xing">融雪径流模型</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://richard163.coding.me/post/ji-xue-de-ji-ben-gai-nian-ji-fen-bu">积雪的基本概念及分布</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://richard163.coding.me/post/swat-mo-xing-de-yuan-li">SWAT模型的原理</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://richard163.coding.me/post/ji-yu-mo-kuai-hua-jian-mo-fang-fa-de-gao-han-tu-rang-re-zhuang-kuang-ji-shui-wen-guo-cheng-mo-ni">基于模块化建模方法的高寒土壤热状况及水文过程模拟</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://richard163.coding.me/post/han-qu-shui-wen-gai-lun">寒区水文概论</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://richard163.coding.me/post/bing-chuan-jing-liu-de-mo-ni">冰川径流的模拟</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://richard163.coding.me/post/bing-chuan-shui-wen-yan-jiu-de-nei-rong">冰川水文研究的内容及基本特点</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://richard163.coding.me/post/ipcc-ar6-srocc-special-report-on-ocean-and-cryosphere-in-a-changing-climate">IPCC AR6 SROCC: Special Report on Ocean and Cryosphere in a Changing Climate </a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://richard163.coding.me/post/ipcc-ar6-special-report-global-warming-of-15">IPCC AR6 Special Report: Global Warming of 1.5℃</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://richard163.coding.me/post/swat-cup-zhong-xu-yao-zhu-yi-de-wen-ti">SWAT-CUP中需要注意的问题</a>
+            </li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      标签列表
+    </div>
+    <div class="row">
+      
+        <a href="https://richard163.coding.me/tag/Wzbzvq-JO" class="badge ">
+          Model
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/YOQagDdAok" class="badge secondary">
+          Hydrology
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/EtwNWeI5_J" class="badge success">
+          Notes
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/cTikL1GtwF" class="badge success">
+          Cryosphere
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/25ZawQQsdM" class="badge success">
+          SWAT
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/WTjoUqOEGp" class="badge secondary">
+          Literature
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/PDT8_RHI0O" class="badge secondary">
+          Climate Change
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/hb4MaOqhQF" class="badge ">
+          SWAT-CUP
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/CqcXyttK4A" class="badge warning">
+          Calibration&amp;Validation
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/UvAMMCXBuM" class="badge secondary">
+          VIC
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/9v4WXiuy8u" class="badge secondary">
+          SCI
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/bW4T_ma3wA" class="badge secondary">
+          Thermokarst Lake
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/Al3ClbouMC" class="badge warning">
+          Review
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/aMfrV0VPC5" class="badge secondary">
+          Python
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/NLuYGV7Yb4" class="badge ">
+          GUI
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/E0kEBQzV1L" class="badge ">
+          PyQt5
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/etvodOpaO_L" class="badge secondary">
+          Cheetsheet
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/D0k8SJN0XfG" class="badge secondary">
+          Numpy
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/omjh0yAJMdw" class="badge warning">
+          Matplotlib
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/eJIsSXtytZ2" class="badge secondary">
+          Seaborn
+        </a>
+      
+        <a href="https://richard163.coding.me/tag/hZb0DGyQCks" class="badge success">
+          Pandas
+        </a>
+      
+    </div>
+  </div>
+  <div class="paper">
+    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://richard163.coding.me//atom.xml" target="_blank">RSS</a>
+  </div>
+</div>
+
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+</script>
+
+
+
+
   </body>
 </html>
