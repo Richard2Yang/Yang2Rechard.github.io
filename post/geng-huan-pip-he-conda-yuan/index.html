@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>Climate Change | Blog of Richard</title>
+<title>更换pip和conda源 | Blog of Richard</title>
 <meta name="description" content="Stay Hungry, Stay Foolish">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -23,6 +23,7 @@
 
   </head>
   <body>
+  
     <nav class="navbar border fixed split-nav">
   <div class="nav-brand">
     <h3><a href="https://richard163.coding.me/">Blog of Richard</a></h3>
@@ -79,88 +80,93 @@
     <div id="top" class="row site">
       <div class="sm-12 md-8 col">
         <div class="paper">
-          <h2 class="current-tag">标签: Climate Change</h2>
-          
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://richard163.coding.me/post/ipcc-ar6-srocc-special-report-on-ocean-and-cryosphere-in-a-changing-climate/">IPCC AR6 SROCC: Special Report on Ocean and Cryosphere in a Changing Climate </a>
-    </h2>
-    <p class="article-meta">
-      2020-01-04
-      
-        <a href="https://richard163.coding.me/tag/EtwNWeI5_J/" class="badge success">
-          Notes
-        </a>
-      
-        <a href="https://richard163.coding.me/tag/WTjoUqOEGp/" class="badge secondary">
-          Literature
-        </a>
-      
-        <a href="https://richard163.coding.me/tag/PDT8_RHI0O/" class="badge ">
-          Climate Change
-        </a>
-      
-    </p>
-    <p class="text-lead">
-      <blockquote>
-<p>原文地址：www.ipcc.ch/srocc/<br>
-《气候变化下的海洋与冰冻圈特别报告》旨在揭示气候变化下的海洋与冰冻圈的响应变化，以及当前和未来国际社会需要做出的适应及减缓气候变暖的决策等。</p>
-</blockquote>
+          <article class="article">
+            <h1>更换pip和conda源</h1>
+            <p class="article-meta">
+              2020-02-22
+              
+                <a href="https://richard163.coding.me/tag/aMfrV0VPC5/" class="badge secondary">
+                  Python
+                </a>
+              
+            </p>
+            
+            <div class="post-content">
+              <h1 id="更换pip源">更换pip源</h1>
+<ol>
+<li>pip国内的一些镜像</li>
+</ol>
+<p>阿里云 http://mirrors.aliyun.com/pypi/simple/ <br>
+  中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/ <br>
+  豆瓣(douban) http://pypi.douban.com/simple/ <br>
+  清华大学 https://pypi.tuna.tsinghua.edu.cn/simple/ <br>
+  中国科学技术大学 http://pypi.mirrors.ustc.edu.cn/simple/</p>
+<ol start="2">
+<li>修改源方法：</li>
+</ol>
+<ul>
+<li>
+<p>临时使用： <br>
+可以在使用pip的时候在后面加上-i参数，指定pip源 <br>
+<code>pip install scrapy -i https://pypi.tuna.tsinghua.edu.cn/simple</code><br>
+<code>--trusted-host  pypi.tuna.tsinghua.edu.cn</code></p>
+</li>
+<li>
+<p>永久修改：</p>
+<ul>
+<li>
+<p>linux: <br>
+修改 ~/.pip/pip.conf (没有就创建一个)， 内容如下：<br>
+<code>[global]</code><br>
+<code>index-url = https://pypi.tuna.tsinghua.edu.cn/simple</code></p>
+</li>
+<li>
+<p>windows: <br>
+直接在user目录中创建一个pip目录，如：C:\Users\xx\pip，新建文件pip.ini，内容如下<br>
+<code>[global]</code><br>
+<code>index-url = https://pypi.tuna.tsinghua.edu.cn/simple/</code><br>
+<code>[install]</code><br>
+<code>trusted-host=pypi.tuna.tsinghua.edu.cn</code><br>
+或<br>
+<code>global]</code><br>
+<code>timeout = 6000</code><br>
+<code>index-url = https://pypi.tuna.tsinghua.edu.cn/simple</code><br>
+<code>trusted-host = pypi.tuna.tsinghua.edu.cn</code></p>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="更换conda源">更换conda源</h1>
+<p>cmd以管理员权限打开输入：<br>
+<code>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</code><br>
+<code>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/</code><br>
+<code>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/</code><br>
+<code>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/</code> #安装pytorch需要<br>
+<code>conda config --set show_channel_urls yes</code><br>
+conda源推荐中科大和清华。二者没有区别，自行选择。<br>
+如果你不想使用国内镜像源，想要切换回原来的镜像源，执行下面的命令。<br>
+<code>conda config --remove-key channels</code></p>
 
-    </p>
-    <div class="row">
-      <a href="https://richard163.coding.me/post/ipcc-ar6-srocc-special-report-on-ocean-and-cryosphere-in-a-changing-climate/" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://richard163.coding.me/post/ipcc-ar6-special-report-global-warming-of-15/">IPCC AR6 Special Report: Global Warming of 1.5℃</a>
-    </h2>
-    <p class="article-meta">
-      2020-01-04
-      
-        <a href="https://richard163.coding.me/tag/EtwNWeI5_J/" class="badge secondary">
-          Notes
-        </a>
-      
-        <a href="https://richard163.coding.me/tag/WTjoUqOEGp/" class="badge secondary">
-          Literature
-        </a>
-      
-        <a href="https://richard163.coding.me/tag/PDT8_RHI0O/" class="badge warning">
-          Climate Change
-        </a>
-      
-    </p>
-    <p class="text-lead">
-      <blockquote>
-<p>原报告网址：https://www.ipcc.ch/sr15/<br>
-旨在探讨全球气温由于人类温室气体排放造成的比工业革命之前升高1.5℃的影响与举措</p>
-</blockquote>
-
-    </p>
-    <div class="row">
-      <a href="https://richard163.coding.me/post/ipcc-ar6-special-report-global-warming-of-15/" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-
+            </div>
+          </article>
         </div>
-        <div class="row flex-edges">
-  
-  
-</div>
-
+        <div class="paper" data-aos="fade-in">
+          
+            <div class="next-post">
+              <div class="next">
+                下一篇
+              </div>
+              <a href="https://richard163.coding.me/post/rong-xue-jing-liu-mo-xing/">
+                <h3 class="post-title">
+                  融雪径流模型
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+        
       </div>
+
       <div class="sm-12 md-4 col sidebar">
   <div class="paper info-container">
     <img src="https://richard163.coding.me//images/avatar.png?v=1582332534265" class="no-responsive avatar">
@@ -285,7 +291,7 @@
     </div>
     <div class="row">
       
-        <a href="https://richard163.coding.me/tag/aMfrV0VPC5/" class="badge secondary">
+        <a href="https://richard163.coding.me/tag/aMfrV0VPC5/" class="badge ">
           Python
         </a>
       
@@ -293,11 +299,11 @@
           Model
         </a>
       
-        <a href="https://richard163.coding.me/tag/YOQagDdAok/" class="badge ">
+        <a href="https://richard163.coding.me/tag/YOQagDdAok/" class="badge secondary">
           Hydrology
         </a>
       
-        <a href="https://richard163.coding.me/tag/EtwNWeI5_J/" class="badge secondary">
+        <a href="https://richard163.coding.me/tag/EtwNWeI5_J/" class="badge ">
           Notes
         </a>
       
@@ -305,7 +311,7 @@
           Cryosphere
         </a>
       
-        <a href="https://richard163.coding.me/tag/25ZawQQsdM/" class="badge success">
+        <a href="https://richard163.coding.me/tag/25ZawQQsdM/" class="badge ">
           SWAT
         </a>
       
@@ -313,15 +319,15 @@
           Literature
         </a>
       
-        <a href="https://richard163.coding.me/tag/PDT8_RHI0O/" class="badge success">
+        <a href="https://richard163.coding.me/tag/PDT8_RHI0O/" class="badge secondary">
           Climate Change
         </a>
       
-        <a href="https://richard163.coding.me/tag/hb4MaOqhQF/" class="badge success">
+        <a href="https://richard163.coding.me/tag/hb4MaOqhQF/" class="badge ">
           SWAT-CUP
         </a>
       
-        <a href="https://richard163.coding.me/tag/CqcXyttK4A/" class="badge secondary">
+        <a href="https://richard163.coding.me/tag/CqcXyttK4A/" class="badge warning">
           Calibration&amp;Validation
         </a>
       
@@ -329,23 +335,23 @@
           VIC
         </a>
       
-        <a href="https://richard163.coding.me/tag/9v4WXiuy8u/" class="badge secondary">
+        <a href="https://richard163.coding.me/tag/9v4WXiuy8u/" class="badge ">
           SCI
         </a>
       
-        <a href="https://richard163.coding.me/tag/bW4T_ma3wA/" class="badge warning">
+        <a href="https://richard163.coding.me/tag/bW4T_ma3wA/" class="badge ">
           Thermokarst Lake
         </a>
       
-        <a href="https://richard163.coding.me/tag/Al3ClbouMC/" class="badge secondary">
+        <a href="https://richard163.coding.me/tag/Al3ClbouMC/" class="badge success">
           Review
         </a>
       
-        <a href="https://richard163.coding.me/tag/NLuYGV7Yb4/" class="badge success">
+        <a href="https://richard163.coding.me/tag/NLuYGV7Yb4/" class="badge secondary">
           GUI
         </a>
       
-        <a href="https://richard163.coding.me/tag/E0kEBQzV1L/" class="badge secondary">
+        <a href="https://richard163.coding.me/tag/E0kEBQzV1L/" class="badge ">
           PyQt5
         </a>
       
@@ -353,7 +359,7 @@
           Cheetsheet
         </a>
       
-        <a href="https://richard163.coding.me/tag/D0k8SJN0XfG/" class="badge secondary">
+        <a href="https://richard163.coding.me/tag/D0k8SJN0XfG/" class="badge ">
           Numpy
         </a>
       
@@ -361,11 +367,11 @@
           Matplotlib
         </a>
       
-        <a href="https://richard163.coding.me/tag/eJIsSXtytZ2/" class="badge secondary">
+        <a href="https://richard163.coding.me/tag/eJIsSXtytZ2/" class="badge success">
           Seaborn
         </a>
       
-        <a href="https://richard163.coding.me/tag/hZb0DGyQCks/" class="badge ">
+        <a href="https://richard163.coding.me/tag/hZb0DGyQCks/" class="badge success">
           Pandas
         </a>
       
@@ -375,6 +381,7 @@
     Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://richard163.coding.me//atom.xml" target="_blank">RSS</a>
   </div>
 </div>
+
 
     </div>
 
