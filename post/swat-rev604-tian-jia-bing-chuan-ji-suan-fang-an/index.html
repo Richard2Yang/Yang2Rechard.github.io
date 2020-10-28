@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>SWAT-CUP | Blog of Richard</title>
+<title>SWAT+ rev60.4添加冰川计算方案 | Blog of Richard</title>
 <meta name="description" content="Stay Hungry, Stay Foolish">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -23,6 +23,7 @@
 
   </head>
   <body>
+  
     <nav class="navbar border fixed split-nav">
   <div class="nav-brand">
     <h3><a href="https://Yang2Rechard.github.io">Blog of Richard</a></h3>
@@ -79,112 +80,96 @@
     <div id="top" class="row site">
       <div class="sm-12 md-8 col">
         <div class="paper">
-          <h2 class="current-tag">标签: SWAT-CUP</h2>
-          
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://Yang2Rechard.github.io/post/swat-cup-zhong-xu-yao-zhu-yi-de-wen-ti/">SWAT-CUP中需要注意的问题</a>
-    </h2>
-    <p class="article-meta">
-      2019-12-31
-      
-        <a href="https://Yang2Rechard.github.io/tag/Wzbzvq-JO/" class="badge ">
-          Model
-        </a>
-      
-        <a href="https://Yang2Rechard.github.io/tag/25ZawQQsdM/" class="badge ">
-          SWAT
-        </a>
-      
-        <a href="https://Yang2Rechard.github.io/tag/YOQagDdAok/" class="badge secondary">
-          Hydrology
-        </a>
-      
-        <a href="https://Yang2Rechard.github.io/tag/EtwNWeI5_J/" class="badge ">
-          Notes
-        </a>
-      
-        <a href="https://Yang2Rechard.github.io/tag/hb4MaOqhQF/" class="badge secondary">
-          SWAT-CUP
-        </a>
-      
-        <a href="https://Yang2Rechard.github.io/tag/CqcXyttK4A/" class="badge secondary">
-          Calibration&amp;Validation
-        </a>
-      
-    </p>
-    <p class="text-lead">
-      
-    </p>
-    <div class="row">
-      <a href="https://Yang2Rechard.github.io/post/swat-cup-zhong-xu-yao-zhu-yi-de-wen-ti/" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
+          <article class="article">
+            <h1>SWAT+ rev60.4添加冰川计算方案</h1>
+            <p class="article-meta">
+              2020-10-28
+              
+                <a href="https://Yang2Rechard.github.io/tag/IWt1eyBIB/" class="badge success">
+                  SWAT+
+                </a>
+              
+                <a href="https://Yang2Rechard.github.io/tag/XpV27JKuh/" class="badge success">
+                  Day-Degree
+                </a>
+              
+                <a href="https://Yang2Rechard.github.io/tag/Wzbzvq-JO/" class="badge secondary">
+                  Model
+                </a>
+              
+                <a href="https://Yang2Rechard.github.io/tag/25ZawQQsdM/" class="badge secondary">
+                  SWAT
+                </a>
+              
+                <a href="https://Yang2Rechard.github.io/tag/YOQagDdAok/" class="badge ">
+                  Hydrology
+                </a>
+              
+                <a href="https://Yang2Rechard.github.io/tag/EtwNWeI5_J/" class="badge success">
+                  Notes
+                </a>
+              
+                <a href="https://Yang2Rechard.github.io/tag/cTikL1GtwF/" class="badge secondary">
+                  Cryosphere
+                </a>
+              
+            </p>
+            
+            <div class="post-content">
+              <p>本文总结和回顾基于SWAT+ rev60.4耦合冰川计算方案及率定和验证参数的IPEAT+的要点和过程</p>
+<!-- more -->
+<h1 id="ipeat">IPEAT+</h1>
+<p>IPEAT+原版基于SWAT+59.2创建完成，通过调用SWAT+中的calibration.cal和cal_parms.cal文件用于模型参数的自动化校正。自该版本之后，SWAT+默认调用swat-deg方案，其中涉及参数率定的输出文件格式及命名均发生改变（channel_day/month/yr.txt更改为channel_sd_day/month/yr），原版本无法使用，因此基于最新版本rev60.4的文件命名和格式进行更改。<br>
+主要修改的文件为：</p>
+<ul>
+<li>IPEAT_plus.f<br>
+原文件设定默认同时读取天、月和年尺度的channel文件，考虑到研究区面积较大时，输出天尺度文件过大且耗时，大多情况下天尺度的校正数据缺乏，因此使用select case分情况读取</li>
+<li>IPEAT_V</li>
+</ul>
+<p>最终IPEAT+修订为两个版本，一是使用原代码结构的方案；二是面向对象式的代码重构方案；相对而言，第二种方案与SWAT+的代码结构方案一致，统一使用面向对象的写法，文件之间的调用和结构更加明确，利于后期更多功能的添加；目前的代码中未考虑并行处理的方案，后期可以继续添加。</p>
+<hr>
+<h1 id="冰川计算方案">冰川计算方案</h1>
+<p>冰川计算方案分为两部分，其中冰川消融方案采用了带有辐射项的增强版度日因子模型(Pellicciotti ea al, 2005)，冰川物质平衡方案则采用了Luo et al, 2013的方案，使用冰川面积-体积-水当量之间的经验方程模拟冰川面积变化，该方案的缺点在于无法模拟冰川的前进(主要与SWAT基于HRU计算，但HRU之间不存在空间位置关系，暂时没想到更好的方案)。</p>
+<ul>
+<li>遇到的问题
+<ul>
+<li>原蒸发(包括积雪的升华)方案在径流计算之后开始<br>
+冰川的消融条件：气温高于融化的临界温度；HRU为冰川；冰面无积雪<br>
+即在考虑冰川变化之前，需要完成积雪物质平衡的计算。<br>
+分类计算：HRU为冰川时开始计算积雪的物质平衡sno_mm(是否已减去升华项)；HRU为其他时按原方案计算</li>
+<li>V-A关系计算冰川面积变化<br>
+必须考虑各个量之间的单位换算问题，体积采用km<sup>3，面积采用km</sup>2，水当量采用mm(原公式中为m<sup>3=10</sup>6mm)，裸冰覆盖采用比重值，便于更改代码（SWAT在计算径流(runoff)时在原值的基础上乘了HRU的面积）。</li>
+<li>冰川/积雪的升华方案<br>
+采用Luo的方案，在基于彭曼公式的潜在蒸发(PET)基础上乘冰川/积雪的消融能力校正系数(考虑季节变化)作为冰川/积雪的真实升华量。</li>
+</ul>
+</li>
+<li>目前仍存在的问题
+<ul>
+<li>输出文件中的蒸发量过大，主要表现在土壤的蒸发和植被的蒸腾方面，原代码在计算ET的过程中可能存在一些问题，暂时未解决。</li>
+</ul>
+</li>
+</ul>
 
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://Yang2Rechard.github.io/post/a-guideline-for-successful-calibration-and-uncertainty-analysis-for-soil-and-water-assessment-a-review-of-papers-from-the-2016-international-swat-conference/">A Guideline for Successful Calibration and Uncertainty Analysis for Soil and Water Assessment: A Review of Papers from the 2016 International SWAT Conference</a>
-    </h2>
-    <p class="article-meta">
-      2019-11-04
-      
-        <a href="https://Yang2Rechard.github.io/tag/Wzbzvq-JO/" class="badge ">
-          Model
-        </a>
-      
-        <a href="https://Yang2Rechard.github.io/tag/25ZawQQsdM/" class="badge ">
-          SWAT
-        </a>
-      
-        <a href="https://Yang2Rechard.github.io/tag/YOQagDdAok/" class="badge ">
-          Hydrology
-        </a>
-      
-        <a href="https://Yang2Rechard.github.io/tag/WTjoUqOEGp/" class="badge warning">
-          Literature
-        </a>
-      
-        <a href="https://Yang2Rechard.github.io/tag/hb4MaOqhQF/" class="badge warning">
-          SWAT-CUP
-        </a>
-      
-        <a href="https://Yang2Rechard.github.io/tag/CqcXyttK4A/" class="badge secondary">
-          Calibration&amp;Validation
-        </a>
-      
-        <a href="https://Yang2Rechard.github.io/tag/9v4WXiuy8u/" class="badge success">
-          SCI
-        </a>
-      
-        <a href="https://Yang2Rechard.github.io/tag/Al3ClbouMC/" class="badge warning">
-          Review
-        </a>
-      
-    </p>
-    <p class="text-lead">
-      
-    </p>
-    <div class="row">
-      <a href="https://Yang2Rechard.github.io/post/a-guideline-for-successful-calibration-and-uncertainty-analysis-for-soil-and-water-assessment-a-review-of-papers-from-the-2016-international-swat-conference/" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-
+            </div>
+          </article>
         </div>
-        <div class="row flex-edges">
-  
-  
-</div>
-
+        <div class="paper" data-aos="fade-in">
+          
+            <div class="next-post">
+              <div class="next">
+                下一篇
+              </div>
+              <a href="https://Yang2Rechard.github.io/post/swatde-chong-yao-lu-ding-can-shu/">
+                <h3 class="post-title">
+                  SWAT+的重要率定参数
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+        
       </div>
+
       <div class="sm-12 md-4 col sidebar">
   <div class="paper info-container">
     <img src="https://Yang2Rechard.github.io/images/avatar.png?v=1603895787739" class="no-responsive avatar">
@@ -315,15 +300,15 @@
     </div>
     <div class="row">
       
-        <a href="https://Yang2Rechard.github.io/tag/IWt1eyBIB/" class="badge ">
+        <a href="https://Yang2Rechard.github.io/tag/IWt1eyBIB/" class="badge secondary">
           SWAT+
         </a>
       
-        <a href="https://Yang2Rechard.github.io/tag/XpV27JKuh/" class="badge warning">
+        <a href="https://Yang2Rechard.github.io/tag/XpV27JKuh/" class="badge secondary">
           Day-Degree
         </a>
       
-        <a href="https://Yang2Rechard.github.io/tag/Wzbzvq-JO/" class="badge warning">
+        <a href="https://Yang2Rechard.github.io/tag/Wzbzvq-JO/" class="badge secondary">
           Model
         </a>
       
@@ -335,7 +320,7 @@
           Hydrology
         </a>
       
-        <a href="https://Yang2Rechard.github.io/tag/EtwNWeI5_J/" class="badge secondary">
+        <a href="https://Yang2Rechard.github.io/tag/EtwNWeI5_J/" class="badge ">
           Notes
         </a>
       
@@ -351,11 +336,11 @@
           Python
         </a>
       
-        <a href="https://Yang2Rechard.github.io/tag/WTjoUqOEGp/" class="badge success">
+        <a href="https://Yang2Rechard.github.io/tag/WTjoUqOEGp/" class="badge warning">
           Literature
         </a>
       
-        <a href="https://Yang2Rechard.github.io/tag/PDT8_RHI0O/" class="badge secondary">
+        <a href="https://Yang2Rechard.github.io/tag/PDT8_RHI0O/" class="badge warning">
           Climate Change
         </a>
       
@@ -363,7 +348,7 @@
           SWAT-CUP
         </a>
       
-        <a href="https://Yang2Rechard.github.io/tag/UvAMMCXBuM/" class="badge secondary">
+        <a href="https://Yang2Rechard.github.io/tag/UvAMMCXBuM/" class="badge success">
           VIC
         </a>
       
@@ -371,23 +356,23 @@
           SCI
         </a>
       
-        <a href="https://Yang2Rechard.github.io/tag/bW4T_ma3wA/" class="badge secondary">
+        <a href="https://Yang2Rechard.github.io/tag/bW4T_ma3wA/" class="badge ">
           Thermokarst Lake
         </a>
       
-        <a href="https://Yang2Rechard.github.io/tag/Al3ClbouMC/" class="badge secondary">
+        <a href="https://Yang2Rechard.github.io/tag/Al3ClbouMC/" class="badge success">
           Review
         </a>
       
-        <a href="https://Yang2Rechard.github.io/tag/NLuYGV7Yb4/" class="badge secondary">
+        <a href="https://Yang2Rechard.github.io/tag/NLuYGV7Yb4/" class="badge success">
           GUI
         </a>
       
-        <a href="https://Yang2Rechard.github.io/tag/E0kEBQzV1L/" class="badge warning">
+        <a href="https://Yang2Rechard.github.io/tag/E0kEBQzV1L/" class="badge secondary">
           PyQt5
         </a>
       
-        <a href="https://Yang2Rechard.github.io/tag/etvodOpaO_L/" class="badge secondary">
+        <a href="https://Yang2Rechard.github.io/tag/etvodOpaO_L/" class="badge warning">
           Cheetsheet
         </a>
       
@@ -395,7 +380,7 @@
           Numpy
         </a>
       
-        <a href="https://Yang2Rechard.github.io/tag/omjh0yAJMdw/" class="badge secondary">
+        <a href="https://Yang2Rechard.github.io/tag/omjh0yAJMdw/" class="badge ">
           Matplotlib
         </a>
       
@@ -403,7 +388,7 @@
           Seaborn
         </a>
       
-        <a href="https://Yang2Rechard.github.io/tag/hZb0DGyQCks/" class="badge warning">
+        <a href="https://Yang2Rechard.github.io/tag/hZb0DGyQCks/" class="badge ">
           Pandas
         </a>
       
@@ -413,6 +398,7 @@
     Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://Yang2Rechard.github.io/atom.xml" target="_blank">RSS</a>
   </div>
 </div>
+
 
     </div>
 

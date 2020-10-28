@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Yang2Rechard.github.io</id>
     <title>Blog of Richard</title>
-    <updated>2020-10-26T01:47:51.019Z</updated>
+    <updated>2020-10-28T14:36:30.605Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Yang2Rechard.github.io"/>
     <link rel="self" href="https://Yang2Rechard.github.io/atom.xml"/>
@@ -10,6 +10,28 @@
     <logo>https://Yang2Rechard.github.io/images/avatar.png</logo>
     <icon>https://Yang2Rechard.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Blog of Richard</rights>
+    <entry>
+        <title type="html"><![CDATA[SWAT+ rev60.4添加冰川计算方案]]></title>
+        <id>https://Yang2Rechard.github.io/post/swat-rev604-tian-jia-bing-chuan-ji-suan-fang-an/</id>
+        <link href="https://Yang2Rechard.github.io/post/swat-rev604-tian-jia-bing-chuan-ji-suan-fang-an/">
+        </link>
+        <updated>2020-10-28T13:59:31.000Z</updated>
+        <summary type="html"><![CDATA[<p>本文总结和回顾基于SWAT+ rev60.4耦合冰川计算方案及率定和验证参数的IPEAT+的要点和过程</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>本文总结和回顾基于SWAT+ rev60.4耦合冰川计算方案及率定和验证参数的IPEAT+的要点和过程</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SWAT+的重要率定参数]]></title>
+        <id>https://Yang2Rechard.github.io/post/swatde-chong-yao-lu-ding-can-shu/</id>
+        <link href="https://Yang2Rechard.github.io/post/swatde-chong-yao-lu-ding-can-shu/">
+        </link>
+        <updated>2020-10-26T01:48:28.000Z</updated>
+        <summary type="html"><![CDATA[<p>这里收录了SWAT+率定时常用的重要参数及其取值范围</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>这里收录了SWAT+率定时常用的重要参数及其取值范围</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ 度日模型]]></title>
         <id>https://Yang2Rechard.github.io/post/du-ri-mo-xing/</id>
@@ -115,40 +137,6 @@
         <content type="html"><![CDATA[<blockquote>
 <p>对《寒区水文导论》一书的<strong>第四章</strong>(冰川水文的研究方法)中重点内容和概念的总结（读书笔记）<br>
 <strong>Citation</strong>: 丁永建, 张世强, 陈仁升, 等. 2017, 寒区水文导论,  科学出版社</p>
-</blockquote>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[冰川水文研究的内容及基本特点]]></title>
-        <id>https://Yang2Rechard.github.io/post/bing-chuan-shui-wen-yan-jiu-de-nei-rong/</id>
-        <link href="https://Yang2Rechard.github.io/post/bing-chuan-shui-wen-yan-jiu-de-nei-rong/">
-        </link>
-        <updated>2020-01-06T03:17:21.000Z</updated>
-        <summary type="html"><![CDATA[<blockquote>
-<p>对《寒区水文导论》一书的<strong>第三章</strong>中重点内容和概念的总结（读书笔记）<br>
-<strong>Citation</strong>: 丁永建, 张世强, 陈仁升, 等. 2017, 寒区水文导论,  科学出版社.</p>
-</blockquote>
-]]></summary>
-        <content type="html"><![CDATA[<blockquote>
-<p>对《寒区水文导论》一书的<strong>第三章</strong>中重点内容和概念的总结（读书笔记）<br>
-<strong>Citation</strong>: 丁永建, 张世强, 陈仁升, 等. 2017, 寒区水文导论,  科学出版社.</p>
-</blockquote>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[IPCC AR6 SROCC: Special Report on Ocean and Cryosphere in a Changing Climate ]]></title>
-        <id>https://Yang2Rechard.github.io/post/ipcc-ar6-srocc-special-report-on-ocean-and-cryosphere-in-a-changing-climate/</id>
-        <link href="https://Yang2Rechard.github.io/post/ipcc-ar6-srocc-special-report-on-ocean-and-cryosphere-in-a-changing-climate/">
-        </link>
-        <updated>2020-01-04T03:09:10.000Z</updated>
-        <summary type="html"><![CDATA[<blockquote>
-<p>原文地址：www.ipcc.ch/srocc/<br>
-《气候变化下的海洋与冰冻圈特别报告》旨在揭示气候变化下的海洋与冰冻圈的响应变化，以及当前和未来国际社会需要做出的适应及减缓气候变暖的决策等。</p>
-</blockquote>
-]]></summary>
-        <content type="html"><![CDATA[<blockquote>
-<p>原文地址：www.ipcc.ch/srocc/<br>
-《气候变化下的海洋与冰冻圈特别报告》旨在揭示气候变化下的海洋与冰冻圈的响应变化，以及当前和未来国际社会需要做出的适应及减缓气候变暖的决策等。</p>
 </blockquote>
 ]]></content>
     </entry>
